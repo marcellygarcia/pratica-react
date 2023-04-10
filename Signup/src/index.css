@@ -8,22 +8,32 @@
   line-height: 35px;
   font-size: 16px;
 }
-:root{
+#root{
+  display: unset;
   background-color: #8ACBCE;
-  
+  height: 100vh;
+  width: 100vw;
 }
 
-.div-1{
+.container-form{
   background-color: #FFFFFF;
-  display: flex;
-  height: 86vh;
-  width: 405px;
+  height: 100vh;
+  width: 731px;
   border-radius: 36px 0px 0px 36px ;
-  align-items: center;
-  flex-direction:column;
-  padding: 120px 180px 0px 180px;
-  gap: 40px;
+  padding-left: 180px; 
+  padding-right: 180px;
   margin-right: 0px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+ }
+
+ .form{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+  align-items: center;
  }
 .div-social{
   height: 45px;
@@ -38,12 +48,13 @@
   flex-direction: row-reverse;
   width: 100%;
   height: 100%;
+  justify-content: space-between;
+  gap: 100px;
 }
 body{
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
   height: 100vh;
+  width: 100vw;
 }
 button{
   background-color: #8ACBCE;
@@ -119,14 +130,29 @@ div.password{
 
 img.home{
   position: absolute;
-  width: 700px;
+  width: 620px;
   height: auto;
-  margin: 150px 650px 0px auto;
+  margin-top: 100px;
+  margin-left: 275px;
 }
 
 div.personal{
   display: flex;
   flex-direction: column;
-  margin-left: 0;
-  margin-right: auto;
+  width: 90vh;
+  height: 90vh;
+  padding-left: 25px;
+  padding-top: 10px;
+  gap: 20px;
+}
+p.title-contrast{
+  color: #FFFFFF;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+  width: 100% ;
+  word-wrap: break-word;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
 }
